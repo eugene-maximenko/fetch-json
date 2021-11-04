@@ -1,4 +1,4 @@
-import axios from './fetchjson/node_modules/axios'
+import axios from 'axios'
 
 const url = "https://jsonplaceholder.typicode.com/todos/1"
 
