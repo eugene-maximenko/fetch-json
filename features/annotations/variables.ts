@@ -9,7 +9,7 @@ let nothing: undefined = undefined
 let now: Date = new Date()
 
 let colors: string[] = ['red', 'green', 'blue']
-let numbers: number[] = [1, 2, 3]
+let number: number[] = [1, 2, 3]
 let truths: boolean[] = [true, true, false]
 
 // Classes
@@ -48,3 +48,12 @@ for (let i = 0; i < words.length; i++) {
     }
 }
 
+// 3) Variable whose type cannot be inferred correctly
+let numbers = [-10, -1, 12]
+let numberAboveZero: boolean | number = false;
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i]) {
+        numberAboveZero = numbers[i]
+    }
+}
