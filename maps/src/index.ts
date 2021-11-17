@@ -1,9 +1,12 @@
-import {User} from "./User";
-import {Company} from "./Company";
+// import {User} from "./User";
+// simport {Company} from "./Company";
+const map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 1,
+    center: {
+        lat: 0,
+        lng: 0
+    }
 
-const user = new User()
+})
 
-console.log(user)
-
-const company = new Company()
-console.log(company)
+map.get
